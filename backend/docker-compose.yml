@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:15.1-alpine
+    container_name: kpo
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Vadim2005ogoniyk2005
+      - POSTGRES_DB=romsDB
+    ports:
+      - '5432:5432'
